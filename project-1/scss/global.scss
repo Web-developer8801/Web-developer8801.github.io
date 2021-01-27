@@ -1,0 +1,151 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #0e0e0e;
+    color: #585858;
+    min-width: 320px;
+}
+p {
+    margin: 0;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: none;
+}
+input {
+    padding-right: 15px;
+}
+// Убираем arrows из input-number для всех браузеров
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+}
+section {
+    background-color: #ffffff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.title {
+    color: #ffffff;
+    span {
+        color: #ffc700;
+    }
+}
+.most__title {
+    position: relative;
+    width: fit-content;
+    font-size: 30px;
+    color: #101010;
+    font-weight: bold;
+    margin-left: 80px;
+
+    span {
+        font-size: 50px;
+    }
+    span:first-child {
+        color: #ffc700;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 133px;
+        height: 1px;
+        background-color: #c5c5c5;
+        bottom: 0;
+        right: 0;
+    }
+}
+.most__uppertext {
+    font-size: 15px;
+    font-weight: italic;
+    color: #000000;
+}
+.most__text {
+    font-size: 14px;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+.process__box-item {
+    display: flex;
+    color: #1d1d1d;
+    span {
+        font-size: 50px;
+    }
+}
+.process__img-wrapper {
+    width: 50%;
+    img {
+        float: right;
+    }
+}
+.process__box-wrapper {
+    width: 50%;
+    padding-left: 35px;
+    padding-right: 25px;
+    padding-top: 20px;
+}
+.process__box-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.process__box-uppertext {
+    font-weight: italic;
+    color: #000000;
+    padding-bottom: 20px;
+}
+.process__box-bottomtext {
+    font-size: 14px;
+    color: #595959;
+    padding-bottom: 45px;
+}
+.social {
+    display: flex;
+    .social-icon {
+        margin-right: 5px;
+    }
+}
+
+@import "media";
