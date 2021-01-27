@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
 
-// Header
+    // Header
 
     $(".header__box-menu ul li").on("click", function (event) {
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
             $current.removeClass('active');
             $current.prev('.project__menu ul li').addClass('active');
 
-           
+
         });
 
         $('.slider-arrows-right').click(function (e) {
@@ -151,6 +151,37 @@ $(document).ready(function () {
         }, 500);
 
     });
+
+    // back-to-top btn
+    (function () {
+        'use strict';
+
+        function trackScroll() {
+            var scrolled = window.pageYOffset;
+            var coords = document.documentElement.clientHeight;
+
+            if (scrolled > coords) {
+                goTopBtn.classList.add('back_to_top-show');
+            }
+            if (scrolled < coords) {
+                goTopBtn.classList.remove('back_to_top-show');
+            }
+        }
+
+        function backToTop() {
+            if (window.pageYOffset > 0) {
+                window.scrollBy(0, -80);
+                setTimeout(backToTop, 0);
+            }
+        }
+
+        var goTopBtn = document.querySelector('.back_to_top');
+
+        window.addEventListener('scroll', trackScroll);
+        goTopBtn.addEventListener('click', backToTop);
+    })();
+
+
     wow = new WOW(
         {
             boxClass: 'wow',      // default

@@ -66,7 +66,6 @@ header {
                 margin-right: 0;
             }
         }
-
     }
 }
 .sublime {
@@ -460,6 +459,7 @@ header {
     z-index: 1;
     position: absolute;
     left: 0;
+    background-color: #000000;
     &::after {
         content: "";
         width: 60px;
@@ -528,7 +528,6 @@ form {
     padding-left: 22px;
     padding-bottom: 65px;
     max-width: 415px;
-    width: 100%;
     border-bottom: 2px solid #7386bc;
     span {
         position: absolute;
@@ -601,5 +600,31 @@ form {
 .bottom__social {
     margin-top: 13px;
 }
+
+.back_to_top {
+    position: fixed;
+    bottom: 50px;
+    left: 13px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 30px;
+    background-image: url(../img/arrow-up.png);
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+    opacity: .5;
+}
+
+.back_to_top:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
 
 @import "media";
