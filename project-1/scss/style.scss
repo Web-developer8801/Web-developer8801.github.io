@@ -608,16 +608,20 @@ form {
     z-index: 9999;
     width: 60px;
     height: 60px;
+    background-image: url(../img/arrow-up.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     line-height: 30px;
-    background-image: url(../img/arrow-up.png);
     cursor: pointer;
     border-radius: 2px;
     display: none;
     opacity: .5;
 }
+  
+  .back_to_top-show {
+    display: block;
+  }
 
 .back_to_top:hover {
     -webkit-transform: scale(1.1);

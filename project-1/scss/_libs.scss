@@ -349,6 +349,9 @@ template {
 }
 
 /* Slider */
+* {
+    outline: none
+}
 .slick-slider
 {
     position: relative;
