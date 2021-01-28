@@ -454,12 +454,12 @@ header {
     position: relative;
     display: flex;
     justify-content: flex-end;
+    background-color: #000000;
 }
 .contacts__map {
     z-index: 1;
     position: absolute;
     left: 0;
-    background-color: #000000;
     &::after {
         content: "";
         width: 60px;
@@ -619,14 +619,12 @@ form {
     opacity: .5;
 }
   
-  .back_to_top-show {
-    display: block;
-  }
+
 
 .back_to_top:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 

@@ -126,6 +126,9 @@
     .blogs__item {
         margin-left: 35px;
     }
+    .bottom__block {
+        padding-top: 0;
+    }
 }
 @media (max-width: 900px) {
     .sublime__top-box-left-wrapper {
@@ -166,6 +169,7 @@
     }
     .blogs {
         flex-wrap: wrap;
+        padding-bottom: 50px;
     }
     .blogs__list {
         margin-left: 0;
@@ -178,7 +182,7 @@
     }
     .contacts {
         flex-wrap: wrap;
-        padding-top: 50px;
+        
     }
     .contacts__map {
         position: relative;
@@ -269,7 +273,9 @@
         margin-left: 128px;
         font-size: 20px;
     }
- 
+    .back_to_top-show {
+        display: block;
+    }
 }
 @media (max-width: 680px) {
     .blogs__rightpart {
