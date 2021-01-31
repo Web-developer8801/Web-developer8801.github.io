@@ -23,35 +23,84 @@ $(document).ready(function () {
 
     });
 
-    $('.project__content').slick({
-        infinite: true,
-        fade: true,
-        prevArrow: '<img class="slider-arrows slider-arrows-left img-svg" src="img/arrows-left.svg" alt="">',
-        nextArrow: '<img class="slider-arrows slider-arrows-right img-svg" src="img/arrows-right.svg" alt="">',
+
+    $('.project-item').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+        },
+
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+                return item.el.attr('title')// + '<small>by Marsel Van Oosten</small>';
+            }
+        },
+
+
+    });
+
+    $('.nav-1').click(function () {
+
+        $('.project-item').removeClass('active');
+        $('.all__works').addClass('active');
+
+    });
+
+    $('.nav-2').click(function () {
+
+        $('.project-item').removeClass('active');
+        $('.games').addClass('active');
+
+    });
+    $('.nav-3').click(function () {
+
+        $('.project-item').removeClass('active');
+        $('.applications').addClass('active');
+
+    });
+    $('.nav-4').click(function () {
+
+        $('.project-item').removeClass('active');
+        $('.content__dev').addClass('active');
 
     });
 
 
-    $(function () {
-        $('.slider-arrows-left').click(function (e) {
+    // $('.project__content').slick({
+    //     infinite: true,
+    //     fade: true,
+    //     prevArrow: '<img class="slider-arrows slider-arrows-left img-svg" src="img/arrows-left.svg" alt="">',
+    //     nextArrow: '<img class="slider-arrows slider-arrows-right img-svg" src="img/arrows-right.svg" alt="">',
 
-            var $current = $('.project__menu ul li.active');
-            $current.removeClass('active');
-            $current.prev('.project__menu ul li').addClass('active');
-
-
-        });
-
-        $('.slider-arrows-right').click(function (e) {
-
-            var $current = $('.project__menu ul li.active');
-            $current.removeClass('active');
-            $current.next('.project__menu ul li').addClass('active');
-
-        });
+    // });
 
 
-    });
+    // $(function () {
+    //     $('.slider-arrows-left').click(function (e) {
+
+    //         var $current = $('.project__menu ul li.active');
+    //         $current.removeClass('active');
+    //         $current.prev('.project__menu ul li').addClass('active');
+
+
+    //     });
+
+    //     $('.slider-arrows-right').click(function (e) {
+
+    //         var $current = $('.project__menu ul li.active');
+    //         $current.removeClass('active');
+    //         $current.next('.project__menu ul li').addClass('active');
+
+    //     });
+
+    // });
+
     // Section Testimonials
     $('.testimonials__slider').slick({
         infinite: true,

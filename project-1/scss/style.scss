@@ -196,10 +196,12 @@ header {
 .slider-arrows-right {
     right: 0;
 }
-.all__works,
-.games,
-.applications,
-.content__dev {
+.project-item {
+    display: none;
+    a {
+        display: block;
+
+    }
     img {
         width: 300px;
         height: 300px;
@@ -207,7 +209,21 @@ header {
         float: left;
         padding-bottom: 1px;
     }
+    &.active {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+.mfp-content {
+    width: 600px;
+    height: 600px;
+    img.mfp-img {
+        width: 100%;
+        
+    }
+}
+
 .process {
     padding-bottom: 60px;
 }
@@ -537,7 +553,11 @@ form {
         left: 80px;
         transform: translateY(-50%);
     }
+    a span:hover {
+        color: #ffffff;
+    }
 }
+
 .info__address {
     position: relative;
     margin-top: 35px;
@@ -616,17 +636,13 @@ form {
     cursor: pointer;
     border-radius: 2px;
     display: none;
-    opacity: .5;
+    opacity: 0.5;
 }
-  
-
 
 .back_to_top:hover {
     transform: scale(1.1);
     transform: scale(1.1);
     transform: scale(1.1);
 }
-
-
 
 @import "media";

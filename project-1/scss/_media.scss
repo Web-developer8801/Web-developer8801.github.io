@@ -1,22 +1,13 @@
 @media (max-width: 1205px) {
-    .project__content {
-        img {
-            display: inline-block;
-            float: none;
-        }
-        .all__works,
-        .games,
-        .applications,
-        .content__dev {
-            width: auto;
-            text-align: center;
-            padding-right: 90px;
-            padding-left: 90px;
-        }
-        .slider-arrows {
-            opacity: 0.25;
-        }
+    .project-item.active {
+        text-align: center;
+        padding-right: 90px;
+        padding-left: 90px;
     }
+    .slider-arrows {
+        opacity: 0.25;
+    }
+
     .bottom__block-leftside {
         padding-top: 70px;
     }
@@ -182,7 +173,6 @@
     }
     .contacts {
         flex-wrap: wrap;
-        
     }
     .contacts__map {
         position: relative;
@@ -262,6 +252,10 @@
             display: none !important;
         }
     }
+    .mfp-content {
+        width: 450px;
+        height: 450px;
+    }
     .testimonials__wrapper {
         margin-left: 80px;
     }
@@ -315,6 +309,10 @@
                 font-size: 13px;
             }
         }
+    }
+    .mfp-content {
+        width: 380px;
+        height: 380px;
     }
     .process_uppertext,
     .process_text {
@@ -424,6 +422,10 @@
         max-width: 95%;
     }
 
+    .mfp-content {
+        width: auto;
+        height: auto;
+    }
     .team__title {
         margin: 0 auto 30px auto !important;
         padding: 0;
