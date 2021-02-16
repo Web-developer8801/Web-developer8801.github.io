@@ -1,0 +1,65 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Russo One", sans-serif;
+    font-weight: 700;
+    background-image: url(../img/header-bg.png);
+    min-width: 320px;
+    color: #353535;
+    font-size: 14px;
+    // overflow-x: hidden;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+li {
+
+}
+p {
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+h1 {
+    position: relative;
+    padding-bottom: 30px;
+}
+.title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0 -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.btn {
+    margin-top: 20px;
+    width: 50%;
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+@import "media";
