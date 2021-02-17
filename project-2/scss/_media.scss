@@ -527,11 +527,10 @@
     }
     .menu__box {
         ul {
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-            li {
-                font-size: 9px;
-            }
+
+span {
+    display: none;
+}
         }
     }
     .services {
@@ -566,9 +565,9 @@
     }
 }
 @media (max-width: 435px) {
-    .advantages__item {
-        padding-top: 0 !important;
-        width: 80% !important;
+    .advantages .advantages__item {
+        padding: 0;
+        width: 80%;
     }
     .line {
         height: 20px;
