@@ -244,10 +244,25 @@
           <input type="text" placeholder="Тип обьекта">
           <input type="number" placeholder="Площадь помещения, м">
           <input type="number" placeholder="Высота потолков, кв.м. ">
+          <!-- <div class="checkbox">
+            <div class="checkbox__1">
+            <input id="checkbox-1" class="custom-checkbox" type="checkbox" name="checkbox-1" value="indigo">
+          </div>
+           <input id="checkbox-2" type="checkbox" />В составе объекта есть кухня <br>
+            <input id="checkbox-3" type="checkbox" />Нужно закупить и доставить материал
+            <label for="checkbox-1">Стены оштукатурены</label>
+          </div> -->
           <div class="checkbox">
-            <label><input type="checkbox" />Стены оштукатурены</label><br>
-            <label></label><input type="checkbox" />В составе объекта есть кухня</label> <br>
-            <label></label><input type="checkbox" />Нужно закупить и доставить материал</label>
+            <input class="custom-checkbox" type="checkbox" id="checkbox-1" name="checkbox-1">
+            <label for="checkbox-1">Стены оштукатурены</label>
+          </div>
+          <div class="checkbox">
+            <input class="custom-checkbox" type="checkbox" id="checkbox-2" name="checkbox-2">
+            <label for="checkbox-2">В составе объекта есть кухня</label>
+          </div>
+          <div class="checkbox">
+            <input class="custom-checkbox" type="checkbox" id="checkbox-3" name="checkbox-3">
+            <label for="checkbox-3">Нужно закупить и доставить материал</label>
           </div>
           <input type="text" placeholder="Имя" required>
           <input type="tel" class="phone-template" placeholder="Телефон" required>
