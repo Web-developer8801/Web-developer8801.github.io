@@ -320,12 +320,6 @@ form {
 
     input:not(input[type="checkbox"]) {
         width: 100%;
-        -webkit-height: 30px;
-        height: 30px;
-        -webkit-margin-bottom: 20px;
-        margin-bottom: 20px;
-        -webkit-padding-left: 10px;
-        padding-left: 10px;
     }
     // Убираем стрелочки в input
     input[type="number"]::-webkit-outer-spin-button,
