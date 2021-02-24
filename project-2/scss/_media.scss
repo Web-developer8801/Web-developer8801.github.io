@@ -479,7 +479,6 @@
             margin-top: 3px;
         }
         .custom-checkbox + label::before {
-            content: "";
             width: 1.3em;
             height: 1.3em;
 
@@ -597,6 +596,16 @@
         padding-top: 86.9px;
         .video__wrapper {
             padding-top: 86.9px;
+        }
+    }
+    .rightpart-left {
+        a:last-child {
+            height: 33%;
+        }
+    }
+    .rightpart-right {
+        a:first-child {
+            height: 33%;
         }
     }
 }
