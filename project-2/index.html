@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Electro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="https://kit.fontawesome.com/2d1b315ae2.js" crossorigin="anonymous"></script>
 </head>
@@ -13,7 +15,7 @@
 <body>
 
 
-  <header>
+  <header class="header" id="header">
     <div class="container">
       <div class="header__box">
         <div class="logo"><img src="img/logo.png" alt=""></div>
@@ -27,20 +29,17 @@
       </div>
     </div>
   </header>
-  <div class="menu__box">
+  <div class="menu__box" data-scroll="#intro">
     <div class="container">
       <nav>
-        <ul>
-          <li>Главная</li>
-          <li>Цены</li>
-          <li>Галерея</li>
+        <ul class="nav" id="nav">
+          <li data-scroll="#main">Главная</li>
+          <li data-scroll="#gallery">Галерея</li>
           <span>
-            <li>Наши работы</li>
+            <li data-scroll="#our__works">Наши работы</li>
           </span>
-          <span>
-            <li>Блог</li>
-          </span>
-          <li>Заказать звонок</li>
+          <li data-scroll="#calc">Стоимость</li>
+          <li data-scroll="#order__call">Заказать звонок</li>
         </ul>
       </nav>
     </div>
@@ -60,7 +59,7 @@
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="main">
     <div class="container">
       <h1 class='title'>
         Приветствуем Вас, уважаемые заказчики и коллеги!
@@ -193,7 +192,7 @@
     </div>
   </section>
 
-  <section class="prices">
+  <!-- <section class="prices" id='prices'>
     <div class="container">
       <div class="prices__wrapper">
         <div class="left__box">
@@ -222,7 +221,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="stripe">
     <div class="container">
       <div class="stripe__text">
@@ -233,7 +232,7 @@
     </div>
   </section>
 
-  <section class="calc">
+  <section class="calc" id="calc">
     <div class="container">
       <div class="calc__wrapper">
         <div class="calc__img">
@@ -272,28 +271,28 @@
     </div>
   </section>
 
-  <section class="gallery">
+  <section class="gallery" >
     <div class="container">
       <div class="gallery__topbox">
         <div class="leftpart">
-          <img src="img/image-1.jpg" alt="">
+          <a href="img/image-1.jpg"><img src="img/image-1.jpg" alt=""></a>
         </div>
-        <div class="rightpart">
+        <div class="rightpart" >
           <div class="rightpart-left">
-            <img src="img/image-6.jpeg" alt="">
-            <img src="img/image-5.jpeg" alt="">
+           <a href="img/image-6.jpeg"><img class="first__img" src="img/image-6.jpeg" alt=""></a>
+           <a href="img/image-5.jpeg"><img src="img/image-5.jpeg" alt=""></a> 
           </div>
           <div class="rightpart-right">
-            <img src="img/image-7.jpeg" alt="">
-            <img src="img/image-8.jpeg" alt="">
+            <a href="img/image-7.jpeg"><img class="first__img" src="img/image-7.jpeg" alt=""></a> 
+            <a href="img/image-8.jpeg"><img src="img/image-8.jpeg" alt=""></a>
           </div>
         </div>
       </div>
 
-      <div class="gallery__bottombox">
-        <div class="gallery__bottombox-img"><img src="img/image-2.jpeg" alt=""></div>
-        <div class="gallery__bottombox-img"><img src="img/image-3.jpeg" alt=""></div>
-        <div class="gallery__bottombox-img"><img src="img/image-4.jpeg" alt=""></div>
+      <div class="gallery__bottombox" id="our__works">
+        <div class="gallery__bottombox-img"><a href="img/image-2.jpeg"><img src="img/image-2.jpeg" alt=""></a></div>
+        <div class="gallery__bottombox-img"><a href="img/image-3.jpeg"><img src="img/image-3.jpeg" alt=""></a></div>
+        <div class="gallery__bottombox-img"><a href="img/image-4.jpeg"><img src="img/image-4.jpeg" alt=""></a></div>
       </div>
     </div>
   </section>
@@ -315,7 +314,7 @@
     </div>
   </section>
 
-  <section class="form">
+  <section class="form" id="order__call">
     <div class="container">
       <div class="form__img">
         <img src="img/note-img.png" alt="">
@@ -355,6 +354,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>

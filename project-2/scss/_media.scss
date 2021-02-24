@@ -102,26 +102,6 @@
             font-size: 14px;
         }
     }
-    .gallery__topbox {
-        overflow-y: hidden;
-
-        .rightpart-left {
-            img:first-child {
-                height: 65%;
-            }
-            img:last-child {
-                height: 34%;
-            }
-        }
-        .rightpart-right {
-            img:first-child {
-                height: 34%;
-            }
-            img:last-child {
-                height: 65%;
-            }
-        }
-    }
 }
 
 @media (max-width: 1020px) {
@@ -225,7 +205,7 @@
         }
     }
     .advantages {
-        margin-top: 30px;
+        margin-top: 50px;
         .advantages__wrapper {
             flex-wrap: wrap;
         }
@@ -331,6 +311,12 @@
         img {
             padding-bottom: 0 !important;
         }
+        .rightpart-left,
+        .rightpart-right {
+            a:first-child {
+                padding-bottom: 5px;
+            }
+        }
         .leftpart {
             padding-right: 5px;
         }
@@ -348,6 +334,7 @@
                 padding-top: 0;
             }
         }
+        
     }
 
     .free {
@@ -514,7 +501,6 @@
     .header__box {
         display: flex;
         justify-content: end;
-        
     }
 
     .header__item-1 {
@@ -526,10 +512,11 @@
     }
     .menu__box {
         ul {
-
-span {
-    display: none;
-}
+            li {
+            }
+            span {
+                display: none;
+            }
         }
     }
     .services {
@@ -566,8 +553,11 @@ span {
 @media (max-width: 435px) {
     .advantages .advantages__item {
         padding: 0;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         width: 80%;
+        &:last-child {
+            padding-bottom: 0;
+        }
         h1 {
             padding-bottom: 20px;
         }
@@ -581,6 +571,10 @@ span {
         }
     }
     .prices {
+        margin-top: 20px;
+        .right__box {
+            margin-top: 0;
+        }
         ul {
             padding-left: 20px;
             padding-right: 20px;
@@ -591,7 +585,6 @@ span {
     }
 }
 @media (max-width: 409px) {
-
     .logo {
         padding-left: 17px;
         padding-right: 5px;
