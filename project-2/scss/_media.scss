@@ -474,8 +474,8 @@
         }
 
         input[type="checkbox"] {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             margin-right: 5px;
             margin-top: 3px;
         }
@@ -581,6 +581,17 @@
             li {
                 font-size: 9px;
             }
+        }
+    }
+    .fixed {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .video {
+        padding-top: 86.9px;
+        .video__wrapper {
+            padding-top: 86.9px;
         }
     }
 }
