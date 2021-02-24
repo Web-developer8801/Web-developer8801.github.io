@@ -566,7 +566,11 @@ span {
 @media (max-width: 435px) {
     .advantages .advantages__item {
         padding: 0;
+        padding-bottom: 30px;
         width: 80%;
+        h1 {
+            padding-bottom: 20px;
+        }
     }
     .line {
         height: 20px;
