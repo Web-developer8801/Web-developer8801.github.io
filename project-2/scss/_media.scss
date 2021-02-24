@@ -459,6 +459,7 @@
     input[type="text"],
     input[type="number"],
     input[type="tel"] {
+        -webkit-margin-bottom: 5px;
         margin-bottom: 5px;
     }
     .calc {
@@ -474,10 +475,14 @@
         }
 
         input[type="checkbox"] {
-            width: 10px;
-            height: 10px;
             margin-right: 5px;
             margin-top: 3px;
+        }
+        .custom-checkbox + label::before {
+            content: "";
+            width: 1.3em;
+            height: 1.3em;
+
         }
     }
     .btn {
