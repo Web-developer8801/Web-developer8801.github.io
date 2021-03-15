@@ -18,6 +18,7 @@ check2.style.display = "none";
 
 var holiday = new Audio('audio/holiday.mp3');
 var click = new Audio('audio/click.mp3');
+var meet = new Audio('audio/meet.mp3');
 
 
 function closeCheck() {
@@ -56,6 +57,7 @@ function animate() {
             pos++;
             person1.style.left = pos + 'px';
             person2.style.right = pos + 'px';
+            meet.play();
 
             setTimeout(closeCheck(), 2000);
 
