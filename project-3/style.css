@@ -80,6 +80,7 @@ a:hover {
     display: none;
     position: absolute;
     width: 150px;
+    z-index: 1100;
 }
 .heart-1 {
     top: 52%;
@@ -97,4 +98,54 @@ a:hover {
 .heart-4 {   
     top: 10%;
     left: 11%;
+}
+
+@media(max-width: 1160px) {
+    .heart {
+        width: 120px;
+    }
+    
+}
+@media(max-width: 450px) {
+.person {
+    width: 50px !important;
+    height: 80px !important;
+}
+.persons {
+    width: auto !important;
+}
+.btn {
+    width: 30px !important;
+    height: 30px !important;
+}
+    
+.heart {
+    width: 60px;
+}
+
+.heart-1 {
+    top: 60%;
+    left: 8%;
+}
+.heart-2 {
+    top: 13%;
+    left: 82%;
+
+}
+.heart-3 {
+    top: 67%;
+    left: 80%;
+}
+.heart-4 {   
+    top: 15%;
+    left: 11%;
+}
+.love {
+    left: 20%;
+}
+.check {
+    width: 30px !important;
+    height: 30px !important;
+}
+
 }

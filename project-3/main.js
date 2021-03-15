@@ -53,6 +53,15 @@ function animate() {
             allhearts()
             holiday.play();
 
+            $(love)(
+                function(){
+                  $(this).fadeTo('slow',0.5);
+                },
+                function(){
+                  $(this).fadeTo('normal',1);
+                }
+              );
+
         } else {
             pos++;
             person1.style.left = pos + 'px';
