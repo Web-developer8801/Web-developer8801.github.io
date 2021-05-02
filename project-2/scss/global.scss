@@ -18,6 +18,7 @@ body {
     color: #353535;
     font-size: 14px;
     -webkit-appearance: none;
+    overflow-x: hidden;
 }
 a {
     display: inline-block;
@@ -28,9 +29,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 }
-li {
 
-}
 p {
     margin: 0;
 }
