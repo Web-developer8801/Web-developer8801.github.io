@@ -148,7 +148,7 @@
             padding-bottom: 55px;
         }
     }
-  
+
     .advantages__uppertext {
         height: 110px;
     }
@@ -170,7 +170,6 @@
         }
     }
     .services {
-  
         .services__img-left img {
             width: 190px;
         }
@@ -263,13 +262,13 @@
         padding-right: 15px;
     }
     .header__item {
-        font-size: 8px;
+        font-size: 9px;
         .icon {
             font-size: 10px;
             left: -16px;
         }
         span {
-            font-size: 9px;
+            font-size: 10px;
             font-weight: 900;
         }
     }
@@ -328,12 +327,11 @@
         }
         .rightpart-right {
             padding-left: 5px;
-      
+
             img:last-child {
                 padding-top: 0;
             }
         }
-        
     }
 
     .free {
@@ -480,7 +478,6 @@
         .custom-checkbox + label::before {
             width: 1.5em;
             height: 1.5em;
-
         }
     }
     .btn {
@@ -502,7 +499,6 @@
         }
     }
 
-
     .header__item-1 {
         display: none;
     }
@@ -512,7 +508,6 @@
     }
     .menu__box {
         ul {
-         
             span {
                 display: none;
             }
@@ -535,7 +530,6 @@
         }
     }
     .gallery__bottombox {
-        
         .gallery__bottombox-img {
             max-width: 30%;
         }
@@ -621,7 +615,7 @@
         justify-content: space-between;
     }
     .header__item {
-margin-left: 25px;
+        margin-left: 25px;
     }
     .services {
         h2,
@@ -656,12 +650,15 @@ margin-left: 25px;
         }
     }
     footer {
-        font-size: 6px;
+        font-size: 7px;
         .container {
             padding: 5px;
         }
         a {
             font-size: 6px !important;
+        }
+        .footer__tel {
+            font-size: 9px !important;
         }
     }
     .logo {

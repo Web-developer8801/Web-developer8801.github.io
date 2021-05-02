@@ -87,8 +87,10 @@ header {
     max-width: 1920px;
     max-height: 540px;
     overflow: hidden;
+    margin: 0 auto;
 
     video {
+        margin: 0 auto;
         display: block;
         max-width: 100%;
     }
@@ -530,6 +532,7 @@ footer {
             text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0 -5px 35px rgba(255, 255, 255, 0.3);
         }
     }
+
 }
 
 /* для элемента input c type="checkbox" */
